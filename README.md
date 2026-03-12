@@ -1,2 +1,15 @@
 # Git-Push-Automatico
-Suba seus projetos de maneira fácil e rápido apenas rodando uma script
+Suba seus projetos de maneira fácil e rápido apenas rodando uma script.
+
+# 📱 Instalação Termux
+```
+pkg install git -y
+
+git clone https://github.com/HiddenTechnology/Git-Push-Automatico
+
+cd Git-Push-Automatico
+
+mv Autopush.sh $PREFIX/bin/Autopush.sh
+
+chmod +x $PREFIX/bin/Autopush.sh
+```
