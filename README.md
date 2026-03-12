@@ -11,7 +11,7 @@ cd Git-Push-Automatico
 
 mv Autopush.sh /usr/local/bin/Autopush
 
-chmod +x /usr/local/bin/Autopush.sh
+chmod +x /usr/local/bin/Autopush
 
 cd
 
@@ -28,7 +28,7 @@ cd Git-Push-Automatico
 
 mv Autopush.sh $PREFIX/bin/Autopush
 
-chmod +x $PREFIX/bin/Autopush.sh
+chmod +x $PREFIX/bin/Autopush
 
 cd
 
