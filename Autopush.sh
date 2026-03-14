@@ -28,14 +28,12 @@ read -p "Mensagem do commit (vazio para 'update'): " mensagem
 # Faz o commit local primeiro (isso protege seu Autopush.sh)
 git commit -m "$mensagem" || echo "Sem mudanças novas no momento."
 
-# 4. Configurar Remote
-url_repo=$(git remote get-url origin 2>/dev/null)
-if [ -z "$url_repo" ]; then
-    read -p "URL do repositório (HTTPS): " url_repo
-    git remote add origin "$url_repo"
-else
-    echo -e "Usando URL existente: ${CIANO}$url_repo${RESET}"
-fi
+# 4. Configurar Remote (Sempre solicita a URL)
+read -p "URL do repositório (HTTPS): " url_repo
+# Remove o origin antigo se existir e adiciona o novo para evitar erro de 'remote already exists'
+git remote remove origin 2>/dev/null
+git remote add origin "$url_repo"
+echo -e "Configurado para: ${CIANO}$url_repo${RESET}"
 
 # 5. SINCRONIZAÇÃO SEGURA
 echo -e "${VERDE}Baixando README/LICENSE do servidor...${RESET}"
