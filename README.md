@@ -2,17 +2,17 @@
 Suba seus projetos de maneira fácil e rápido apenas rodando uma script.
 
 ----------------------------------------
-Define a configuração local :
+Define a configuração local
 ----------------------------------------
 
-Usuário GitHub:
+- Usuário GitHub:
 
-E-mail GitHub:
+- E-mail GitHub:
 
 Mensagem do commit: (qualquer descrição da sua alteração ou aperte enter para seguir o padrão)
 
 ----------------------------------------
-Define a configuração do servidor:
+Define a configuração do servidor
 ----------------------------------------
 
 URL do repositório (HTTPS):
